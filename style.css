@@ -1,0 +1,162 @@
+:root {
+    --primaria: #F806CC;
+    --secundaria: #a91079;
+    --fundo: #1C0A21;
+    --texto: #ccc;
+    --footer: #2f2f2f;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+.navbar-logo {
+    color: var(--texto);
+    font-size: 30px;
+}
+
+.navbar-custom {
+    background-color: var(--fundo);
+}
+
+.navbar-nav {
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--texto);
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primaria);
+    transition: color 0.5s ease;
+
+}
+
+.bio {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.bio h1 {
+    font-size: 35px;
+}
+
+.bio h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    background-color: var(--secundaria);
+    overflow: hidden;
+    border-right: 0.15em solid var(--primaria);
+    white-space: nowrap;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    animation: typing 4s steps(28) alternate infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    /* inicia com largura 0 */
+    to {
+        width: 80%;
+    }
+
+    /* termina com largura 100% */
+}
+
+.bio h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.bio p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.img-perfil {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.btns {
+    width: 30%;
+    margin-right: 100px;
+    border-radius: 5em;
+}
+
+.btn-cv {
+    background-color: transparent;
+    color: var(--primaria);
+    border-color: var(--primaria);
+}
+
+.btn-cv:hover {
+    background-color: var(--primaria);
+    border-color: var(--secundaria);
+    box-shadow: 0px 0px 8px rgba(248, 6, 204, 0.683);
+}
+
+.btn-contato {
+    background-color: var(--secundaria);
+    border-color: var(--secundaria);
+    margin-right: 100px;
+
+}
+
+.btn-contato:hover {
+    background-color: var(--primaria);
+    border-color: var(--secundaria);
+    box-shadow: 0px 0px 8px rgba(248, 6, 204, 0.683);
+}
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Largura da barra de rolagem */
+}
+
+/* Estilizando o track (o fundo da barra de rolagem) */
+::-webkit-scrollbar-track {
+    background: #1C0A21;
+    /* Cor do fundo */
+}
+
+/* Estilizando o thumb (a alça da barra de rolagem) */
+::-webkit-scrollbar-thumb {
+    background: #570A57;
+    /* Cor da alça */
+}
+
+/* Estilizando o thumb quando o usuário estiver interagindo com ele (hover ou active) */
+::-webkit-scrollbar-thumb:hover {
+    background: #570A57;
+    /* Cor da alça */
+}
+
+@media (max-width: 767px) {
+    .bio {
+        margin-top: 20px;
+    }
+
+    .bio h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .bio p {
+        font-size: 16px;
+    }
+}
