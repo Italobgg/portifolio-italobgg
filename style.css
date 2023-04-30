@@ -92,8 +92,7 @@ h3 {
 }
 
 .btns {
-    width: 30%;
-    margin-right: 100px;
+    width: 40%;
     border-radius: 5em;
 }
 
@@ -112,8 +111,6 @@ h3 {
 .btn-contato {
     background-color: var(--secundaria);
     border-color: var(--secundaria);
-    margin-right: 100px;
-
 }
 
 .btn-contato:hover {
@@ -147,6 +144,11 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
+    .navbar-toggler-icon{ 
+        background-color: red;
+    }
+    
     .bio {
         margin-top: 20px;
     }
@@ -158,5 +160,11 @@ h3 {
 
     .bio p {
         font-size: 16px;
+    }
+
+    .btns {
+        width: 100%;
+        margin-right: 100px;
+        border-radius: 5em;
     }
 }
