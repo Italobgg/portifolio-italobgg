@@ -2,7 +2,7 @@
     --primaria: #F806CC;
     --secundaria: #a91079;
     --fundo: #1C0A21;
-    --fundo2: #570A57;
+    --fundo2: #140718;
     --texto: #ccc;
     --footer: #2f2f2f;
 }
@@ -82,7 +82,7 @@ h3 {
 }
 
 .container-sobre-mim {
-    background-color: var(--fundo2);
+    background-color: #0F070E;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -128,6 +128,32 @@ h3 {
     border-color: var(--secundaria);
     box-shadow: 0px 0px 8px rgba(248, 6, 204, 0.683);
 }
+
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+.image-container {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+    background: #ffffff;
+  }
+  .image-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+    background: #fa00cc;
+    opacity: 0.5;
+  }
+  .image-container > img {
+    -webkit-filter:  brightness(100%) contrast(100%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+            filter:  brightness(100%) contrast(100%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+    mix-blend-mode: none;
+  }
+  
 
 /* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {

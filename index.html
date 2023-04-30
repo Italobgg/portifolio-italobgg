@@ -5,6 +5,7 @@
     <title>Portifólio Italobgg</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -37,47 +38,69 @@
     </header>
 
 
-    <main class="container container-custom">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="bio">
-                    <h1>Ola! sou</h1>
-                    <h2>Italo Bartolomeu</h2>
-                    <h3>Desenvolvedor web front-end.</h3>
-                    <p>Estudante de programação com foco em Desenvolvimento Web Frontend. Como uma pessoa que ama
-                        designs intuitivos e esteticamente agradáveis, procuro criar projetos que proporcionem a melhor
-                        experiência do usuário.</p>
+    <main>
+        <section class="container container-custom">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bio">
+                        <h1>Ola! sou</h1>
+                        <h2>Italo Bartolomeu</h2>
+                        <h3>Desenvolvedor web front-end.</h3>
+                        <p>Estudante de programação com foco em Desenvolvimento Web Frontend. Como uma pessoa que ama
+                            designs intuitivos e esteticamente agradáveis, procuro criar projetos que proporcionem a melhor
+                            experiência do usuário.</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn btn-primary btn-cv btns">Baixar CV</button>
+                        <button class="btn btn-secondary btn-contato btns">Contato</button>
+                    </div>
                 </div>
-                <div class="buttons">
-                    <button class="btn btn-primary btn-cv btns">Baixar CV</button>
-                    <button class="btn btn-secondary btn-contato btns">Contato</button>
-                </div>
-            </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <img src="./src/images/perfil.png" alt="Imagem de perfil" class="img-fluid img-perfil">
-            </div>
-        </div>
-    </main>
-
-    <main class="container-fluid container-sobre-mim">
-        <div class="row row-custom">
-            <h2 class="text-center">Sobre mim</h2>
-            <div class="col-md-6 order-md-2">
-                <div class="bio bio-sobre-mim">
-                    <h2 class="text-end text-md-start">Italo Bartolomeu</h2>
-                    <p>Sou graduado em análise e Desenvolvimento de Sistemas e autodidata em Desenvolvimento Web com
-                        foco em programação Front-end.
-                        Aspiro a conseguir um emprego no mundo do Desenvolvimento Web, ganhar experiência, novos
-                        conhecimentos e fortalecer a minha vida profissional.</p>
-                    <p> Sou uma pessoa empática e entusiasta, com habilidades voltadas para o trabalho em equipe,
-                        comunicação assertiva, resolução de problemas, responsável e proativa, gosto de aprender com os
-                        outros e me aprimorar continuamente.</p>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./src/images/perfil.png" alt="Imagem de perfil" class="img-fluid img-perfil">
                 </div>
             </div>
-            <div class="col-md-6 order-md-1 d-flex justify-content-center align-items-center">
-                <img src="./src/images/blob.svg" alt="Sua imagem" class="img-fluid img-about">
+        </section>
+    
+        <section class="container-fluid container-sobre-mim">
+            <div class="row row-custom">
+                <h2 class="text-center">Sobre mim</h2>
+                <div class="col-md-6 order-md-2">
+                    <div class="bio bio-sobre-mim">
+                        <h2 class="text-end text-md-start">Italo Bartolomeu</h2>
+                        <p>Sou graduado em análise e Desenvolvimento de Sistemas e autodidata em Desenvolvimento Web com
+                            foco em programação Front-end.
+                            Aspiro a conseguir um emprego no mundo do Desenvolvimento Web, ganhar experiência, novos
+                            conhecimentos e fortalecer a minha vida profissional.</p>
+                        <p> Sou uma pessoa empática e entusiasta, com habilidades voltadas para o trabalho em equipe,
+                            comunicação assertiva, resolução de problemas, responsável e proativa, gosto de aprender com os
+                            outros e me aprimorar continuamente.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1 d-flex justify-content-center align-items-center">
+                    <div class="image-container">
+                        <img class="" src="./src/images/perfil2.png" alt="Sua imagem" class="img-fluid img-about">
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+    
+        <section class="container">
+            <h2 class="text-center">Conhecimentos</h2>
+            <div class="row justify-content-center align-items-center">
+              <div class="col-sm-4 col-md-2 text-center">
+                <i class="fab fa-html5 fa-5x"></i>
+                <p>HTML</p>
+              </div>
+              <div class="col-sm-4 col-md-2 text-center">
+                <i class="fab fa-css3-alt fa-5x"></i>
+                <p>CSS</p>
+              </div>
+              <div class="col-sm-4 col-md-2 text-center">
+                <i class="fab fa-js-square fa-5x"></i>
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </section>
     </main>
 
     <footer class="bg-dark py-5">
