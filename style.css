@@ -2,13 +2,26 @@
     --primaria: #F806CC;
     --secundaria: #a91079;
     --fundo: #1C0A21;
+    --fundo2: #570A57;
     --texto: #ccc;
     --footer: #2f2f2f;
 }
 
 body {
-    background-color: var(--fundo);
+    background-color: #1C0A21;
     color: var(--texto);
+    height: 100%;
+}
+
+
+h3 {
+    background-color: var(--secundaria);
+    overflow: hidden;
+    border-right: 0.15em solid var(--primaria);
+    white-space: nowrap;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    animation: typing 4s steps(28) alternate infinite;
 }
 
 .navbar-logo {
@@ -16,24 +29,30 @@ body {
     font-size: 30px;
 }
 
-.navbar-custom {
-    background-color: var(--fundo);
-}
-
 .navbar-nav {
-    margin-left: auto;
-    font-size: 18px;
+    margin-right: 10px;
+    font-size: 22px;
 }
 
 .navbar-nav .nav-link {
     color: var(--texto);
-    margin-right: 20px;
+    margin-right: 50px;
 }
-
+  
 .navbar-nav .nav-link:hover {
     color: var(--primaria);
     transition: color 0.5s ease;
+}
 
+.navbar-custom {
+    background-color: var(--fundo);
+    
+}
+
+.container-custom {
+    background-color: var(--fundo);
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 .bio {
@@ -51,29 +70,6 @@ body {
     margin-bottom: 20px;
 }
 
-h3 {
-    background-color: var(--secundaria);
-    overflow: hidden;
-    border-right: 0.15em solid var(--primaria);
-    white-space: nowrap;
-    font-size: 2em;
-    letter-spacing: 0.15em;
-    animation: typing 4s steps(28) alternate infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    /* inicia com largura 0 */
-    to {
-        width: 80%;
-    }
-
-    /* termina com largura 100% */
-}
-
 .bio h3 {
     font-size: 20px;
     margin-bottom: 20px;
@@ -81,9 +77,23 @@ h3 {
 }
 
 .bio p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
 }
+
+.container-sobre-mim {
+    background-color: var(--fundo2);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bio-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 
 .img-perfil {
     width: 100%;
@@ -141,6 +151,19 @@ h3 {
 ::-webkit-scrollbar-thumb:hover {
     background: #570A57;
     /* Cor da alça */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    /* inicia com largura 0 */
+    to {
+        width: 80%;
+    }
+
+    /* termina com largura 100% */
 }
 
 @media (max-width: 767px) {
