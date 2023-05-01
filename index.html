@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
             <div class="container-fluid">
                 <a class="navbar-brand navbar-logo" href="#">Ballgor</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -20,16 +20,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="#">Página Inicial</a>
+                            <a class="nav-link nav-link-custom" href="#pagina-inicial">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="#">Sobre</a>
+                            <a class="nav-link nav-link-custom" href="#sobre-mim">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="#">Portfólio</a>
+                            <a class="nav-link nav-link-custom" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-custom" href="#">Contato</a>
+                            <a class="nav-link nav-link-custom" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +40,7 @@
 
     <main>
         <section class="container container-custom">
-            <div class="row">
+            <div id="pagina-inicial" class="row">
                 <div class="col-md-6">
                     <div class="bio">
                         <h1>Ola! sou</h1>
@@ -62,7 +62,7 @@
         </section>
     
         <section class="container-fluid container-sobre-mim">
-            <div class="row row-custom">
+            <div id="sobre-mim" class="row row-custom">
                 <h2 class="text-center">Sobre mim</h2>
                 <div class="col-md-6 order-md-2">
                     <div class="bio bio-sobre-mim">
@@ -86,7 +86,7 @@
     
         <section class="container container-icons">
             <h2 class="text-center">Conhecimentos</h2>
-            <div class="row justify-content-center align-items-center">
+            <div id="habilidades" class="row justify-content-center align-items-center">
               <div class="col-sm-4 col-md-2 text-center icon">
                 <i class="fab fa-html5 fa-5x"></i>
                 <p>HTML</p>
