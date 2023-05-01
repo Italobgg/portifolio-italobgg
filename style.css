@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+
+
 :root {
     --primaria: #F806CC;
     --secundaria: #a91079;
@@ -5,14 +9,16 @@
     --fundo2: #140718;
     --texto: #ccc;
     --footer: #2f2f2f;
+    --fontNeon: 'Tilt Neon'
 }
+
 
 body {
     background-color: #1C0A21;
     color: var(--texto);
     height: 100%;
+    
 }
-
 
 h3 {
     background-color: var(--secundaria);
@@ -121,7 +127,7 @@ h3 {
 
 .container-icons {
     background-color: var(--fundo);
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 150px;
 }
 
