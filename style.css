@@ -17,7 +17,7 @@ body {
     background-color: #1C0A21;
     color: var(--texto);
     height: 100%;
-    
+
 }
 
 h3 {
@@ -28,6 +28,14 @@ h3 {
     font-size: 2em;
     letter-spacing: 0.15em;
     animation: typing 4s steps(28) alternate infinite;
+}
+
+.h2-titulos {
+    color: #fff;
+    text-shadow: 0 0 10px #F806CC, 0 0 20px #F806CC, 0 0 30px #F806CC, 0 0 40px #F806CC;
+    font-family: var(--fontNeon);
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 
 .navbar-logo {
@@ -41,14 +49,16 @@ h3 {
 }
 
 .navbar-custom {
-    background-color: var(--fundo);
-
+    backdrop-filter: blur(10px) opacity(0.8);
+    -webkit-backdrop-filter: blur(10px) opacity(0.8);
+    background-color: #2f2f2f59;
 }
 
 .container-custom {
     background-color: var(--fundo);
-    margin-top: 60px;
-    margin-bottom: 120px;
+    padding-top: 150px;
+    padding-bottom: 90px;
+
 }
 
 .bio {
@@ -80,7 +90,7 @@ h3 {
 .container-sobre-mim {
     background-color: #0F070E;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
 }
 
 .bio-sobre-mim {
@@ -125,11 +135,32 @@ h3 {
     box-shadow: 0px 0px 8px rgba(248, 6, 204, 0.683);
 }
 
-.container-icons {
+.container-habilidades {
     background-color: var(--fundo);
-    margin-top: 60px;
-    margin-bottom: 150px;
+    padding-top: 80px;
+    padding-bottom: 150px;
 }
+
+.border-habilidades {
+    background-color: var(--fundo2);
+    border: solid 1px var(--primaria);
+    border-radius: 20px;
+    box-shadow: 0 0 1px var(--primaria), 0 0 2px var(--primaria), 0 0 3px var(--primaria), 0 0 4px var(--primaria);
+    animation: neon-border 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes neon-border {
+    from {
+        box-shadow: 0 0 3px var(--primaria), 0 0 7px var(--primaria), 0 0 15px var(--primaria), 0 0 20px var(--primaria);
+    }
+
+    to {
+        box-shadow: 0 0 7px var(--primaria), 0 0 15px var(--primaria), 0 0 25px var(--primaria), 0 0 30px var(--primaria);
+    }
+}
+
+
+
 
 .icon {
     background-color: #0F070E;
@@ -153,7 +184,6 @@ h3 {
     transition: all 0.5s ease;
 }
 
-
 /* Filtro perfil2 */
 .image-container {
     display: inline-block;
@@ -170,7 +200,7 @@ h3 {
     top: 0;
     left: 0;
     mix-blend-mode: multiply;
-    background: #fa00cc;
+    background: var(--primaria);
     opacity: 0.5;
 }
 
@@ -179,12 +209,6 @@ h3 {
     filter: brightness(100%) contrast(100%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
     mix-blend-mode: none;
 }
-
-
-
-
-
-
 
 /* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {
@@ -226,7 +250,7 @@ h3 {
 @media (max-width: 767px) {
 
     .navbar-toggler-icon {
-        background-color: red;
+        background-color: rgb(30, 18, 48);
     }
 
     .bio {
