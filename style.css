@@ -143,9 +143,8 @@ h3 {
 
 .border-habilidades {
     background-color: var(--fundo2);
-    border: solid 1px var(--primaria);
+    border: solid 1px #ec1aff93;
     border-radius: 20px;
-    box-shadow: 0 0 1px var(--primaria), 0 0 2px var(--primaria), 0 0 3px var(--primaria), 0 0 4px var(--primaria);
     animation: neon-border 0.8s ease-in-out infinite alternate;
 }
 
@@ -157,31 +156,6 @@ h3 {
     to {
         box-shadow: 0 0 7px var(--primaria), 0 0 15px var(--primaria), 0 0 25px var(--primaria), 0 0 30px var(--primaria);
     }
-}
-
-
-
-
-.icon {
-    background-color: #0F070E;
-    border: solid 2px #0F070E;
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    filter: saturate(100%);
-    width: 10rem;
-    height: 10rem;
-    margin: 30px;
-}
-
-.icon:hover {
-    border: solid 2px var(--primaria);
-    box-shadow: 0px 0px 8px rgba(248, 6, 204, 0.933);
-    transform: scale(1.1);
-    transition: all 0.5s ease;
 }
 
 /* Filtro perfil2 */
@@ -241,7 +215,7 @@ h3 {
 
     /* inicia com largura 0 */
     to {
-        width: 80%;
+        width: 100%;
     }
 
     /* termina com largura 100% */
