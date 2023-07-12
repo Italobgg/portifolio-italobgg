@@ -1,0 +1,56 @@
+body {
+  background: #636363;
+}
+
+
+/* APRESENTAÇÃO */
+.portfolio-section {
+  padding: 100px 0;
+  background-color: #BB72DD;
+}
+
+.portfolio-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.portfolio-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .portfolio-text {
+    text-align: center;
+  }
+
+  .portfolio-text span {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .portfolio-text h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .portfolio-text p {
+    font-size: 16px;
+    text-align: center;
+  }
+}

@@ -7,6 +7,7 @@
     <title>ItaloBGG</title>
     <!-- Importando o CSS do Bootstrap -->
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
@@ -41,29 +42,38 @@
         </nav>
     </header>
 
-    <div id="hero" class="home">
 
+    <!-- Apresentação -->
+    <section class="portfolio-section">
         <div class="container">
-          <div class="hero-content">
-            <h1>I'm <span class="typed" data-typed-items="Alex Smith, Designer, Developer, Freelancer, Photographer"></span></h1>
-            <p>Designer, Developer, Freelancer, Photographer</p>
-    
-            <ul class="list-unstyled list-social">
-              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-            </ul>
-          </div>
+
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="portfolio-text">
+                        <span class=" type-style typed-text"></span>
+                        <h1>Italo Bartolomeu</h1>
+                        <p>Sou desenvolvedor web apaixonado por criar soluções digitais. Busco sempre aprimorar minhas
+                            habilidades e entregar projetos de qualidade.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="portfolio-image">
+                        <img src="./src/images/perfil.png" alt="Imagem do Perfil"
+                            class="animate__animated animate__fadeInRight">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div><!-- End Hero -->
-
-
-
+    </section>
 
 
     <!-- Importando o JavaScript do Bootstrap -->
     <script src="./src/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="./src/js/custom.js"></script>
+
+
 </body>
 
 </html>
