@@ -203,28 +203,24 @@ body {
 
 .icon-section {
   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .technology-item {
   background-color: #feede1;
+  width: 150px;
   border-radius: 20px;
-  padding: 10px 0;
   text-align: center;
+  margin: 10px;
+  padding: 10px 0;
 }
 
 .technology-item i {
-  font-size: 108px;
+  font-size: 50px;
   margin-bottom: 20px;
-  transition: font-size 1s;
-}
-
-.technology-item i:hover {
-  font-size: 158px;
-  transition: font-size 1s;
-}
-
-.technology-item:not(:hover) i {
-  font-size: 108px;
   transition: font-size 1s;
 }
 
@@ -262,32 +258,12 @@ body {
     padding: 80px 0;
   }
 
+  .icon-section {
+    flex-wrap: wrap;
+  }
+
   .technology-item {
-    background-color: #feede1;
-    border-radius: 20px;
-    padding: 10px 0;
-    text-align: center;
-    
+    width: calc(50% - 20px);
   }
 
-  .technology-item i {
-    font-size: 108px;
-    margin-bottom: 20px;
-    transition: font-size 1s;
-  }
-  
-  .technology-item i:hover {
-    font-size: 158px;
-    transition: font-size 1s;
-  }
-  
-  .technology-item:not(:hover) i {
-    font-size: 108px;
-    transition: font-size 1s;
-  }
-  
-
-  .technology-item h4 {
-    font-size: 16px;
-  }
 }
