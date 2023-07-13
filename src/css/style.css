@@ -1,30 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+:root {
+  --white-color: #FAE3E3;
+  --dark-color: #000000;
+  --primary-color: #ffd6ba;
+  --secondary-color: #d3b5f3;
+  --section-bg-colo-primary: #3f3b3f;
+  --section-bg-colo-secondary: #f6dece;
+  --custom-btn-bg-color: #0081a7;
+  --custom-btn-bg-hover-color: #4dfff3;
+  --p-color: #dddddd;
+  --border-color: #7fffd4;
+  --link-hover-color: #89429e;
+
+  --body-font-family: sans-serif;
+
+  --h1-font-size: 120px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --btn-font-size: 14px;
+  --copyright-font-size: 16px;
+
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+ul li {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+a,
+button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+}
+
+a {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
 body {
-  background: #636363;
+  font-family: 'Oswald';
 }
 
 
 /* APRESENTAÇÃO */
 .portfolio-section {
-  padding: 100px 0;
-  background-color: #BB72DD;
+  padding: 40px 0;
+  background: var(--section-bg-colo-primary);
+}
+
+.portfolio-text span {
+  font-size: 4em;
+  color: var(--secondary-color);
 }
 
 .portfolio-text h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
 }
 
 .portfolio-text h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
 }
 
 .portfolio-text p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #ffffff;
+  font-size: 1.2em;
+  line-height: 2;
+  color: var(--p-color);
 }
 
 .portfolio-image img {
@@ -33,24 +139,67 @@ body {
   border-radius: 100%;
 }
 
+.icon {
+  font-size: 55px;
+  color: var(--secondary-color);
+}
+
+.icon:hover {
+  color: var(--link-hover-color);
+  transition: 0.7s;
+}
+
+/* TECNOLOGIAS */
+.technology-section {
+  background: var(--section-bg-colo-secondary);
+  padding: 100px 0;
+}
+
+.technology-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.icon-section {
+  margin-bottom: 30px;
+}
+
+.technology-item {
+  text-align: center;
+}
+
+.technology-item i {
+  font-size: 108px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.technology-item h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+
 @media (max-width: 768px) {
 
-  .portfolio-text {
-    text-align: center;
-  }
-
   .portfolio-text span {
-    font-size: 20px;
-    text-align: center;
+    font-size: 2em;
   }
 
   .portfolio-text h1 {
-    font-size: 28px;
-    text-align: center;
+    font-size: 6.5em;
+  }
+
+  .portfolio-text h2 {
+    font-size: 4em;
   }
 
   .portfolio-text p {
     font-size: 16px;
-    text-align: center;
+  }
+
+  .icon {
+    font-size: 40px;
   }
 }
