@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
 
 :root {
-  --white-color: #FAE3E3;
-  --dark-color: #000000;
+  --white-color: #f9e1d1;
+  --dark-color: #353535;
   --primary-color: #ffd6ba;
   --secondary-color: #d3b5f3;
   --section-bg-colo-primary: #3f3b3f;
@@ -265,7 +265,7 @@ body {
 }
 
 .technology-item {
-  background-color: #feede1;
+  background-color: var(--white-color);
   border-radius: 20px;
   padding: 10px;
 }
@@ -281,9 +281,49 @@ body {
   color: var(--dark-color);
 }
 
+/* FORMAÇÃO */
+.formacao-section {
+  background-color: var(--section-bg-colo-primary);
+  padding: 120px 0;
+}
+
+.formacao-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--white-color);
+}
+
+.row-formacao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-section {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formacao-item {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  padding: 10px;
+}
+
+.img-universidade {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.formacao-item h4 {
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-color);
+}
 
 @media (max-width: 768px) {
-
   /* NAVBAR */
   .navbar-brand {
     font-size: 20px;
@@ -346,6 +386,34 @@ body {
   }
 
   .technology-item h4 {
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-color);
+  }
+
+  /* FORMAÇÃO */
+  .formacao-section {
+    padding: 80px 0;
+  }
+
+  .formacao-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .img-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .formacao-item {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .formacao-item h4 {
     font-size: 18px;
     font-weight: var(--font-weight-bold);
     color: var(--dark-color);
