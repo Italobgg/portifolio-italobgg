@@ -38,7 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
       element: sectionElement,
       handler: function () {
         // Quando a seção estiver visível, adiciona a classe de animação do animate.css
-        sectionElement.classList.add("animate__animated", "animate__bounceInRight");
+        sectionElement.classList.add(
+          "animate__animated",
+          "animate__bounceInRight"
+        );
       },
       offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado
     });
@@ -46,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var sectionElements = document.querySelectorAll("#formacoes");
+  var sectionElements = document.querySelectorAll("#unip");
 
   // Percorre todas as seções selecionadas
   sectionElements.forEach(function (sectionElement) {
@@ -55,7 +58,30 @@ document.addEventListener("DOMContentLoaded", function () {
       element: sectionElement,
       handler: function () {
         // Quando a seção estiver visível, adiciona a classe de animação do animate.css
-        sectionElement.classList.add("animate__animated", "animate__bounceInLeft");
+        sectionElement.classList.add(
+          "animate__animated",
+          "animate__fadeInLeft"
+        );
+      },
+      offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var sectionElements = document.querySelectorAll("#desco");
+
+  // Percorre todas as seções selecionadas
+  sectionElements.forEach(function (sectionElement) {
+    // Cria um novo waypoint para cada seção
+    var waypoint = new Waypoint({
+      element: sectionElement,
+      handler: function () {
+        // Quando a seção estiver visível, adiciona a classe de animação do animate.css
+        sectionElement.classList.add(
+          "animate__animated",
+          "animate__fadeInRight"
+        );
       },
       offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado
     });
