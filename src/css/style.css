@@ -224,7 +224,7 @@ body {
   color: var(--p-color);
 }
 
-.portfolio-image img {
+.italo-image img {
   width: 100%;
   height: auto;
   border-radius: 100%;
@@ -281,6 +281,59 @@ body {
   color: var(--dark-color);
 }
 
+/* PORTFOLIO */
+
+.portfolio-section {
+  padding: 120px 0;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.portfolio-image img {
+  display: block;
+  width: 100%;
+}
+
+.portfolio-description {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 30px;
+}
+
+.portfolio-description h3 {
+  font-size: var(--h3-font-size);
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.portfolio-description p {
+  margin-bottom: 20px;
+}
+
+.portfolio-description .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  text-decoration: none;
+  border-radius: 5px;
+  border: transparent;
+}
+
+.portfolio-description .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+
 /* FORMAÇÃO */
 
 .formacao-section {
@@ -332,7 +385,7 @@ body {
 
 .footer-section {
   padding: 60px 0;
-  background-color: #3f3b3f;
+  background-color: var(--dark-color);
   color: #f9e1d1;
 }
 
@@ -404,6 +457,31 @@ body {
     font-size: 40px;
   }
 
+  /* PORTFOLIO */
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-image,
+  .portfolio-description {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .portfolio-description {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .portfolio-description h3 {
+    font-size: 20px;
+  }
+
+  .portfolio-description .btn {
+    display: block;
+    margin-top: 20px;
+  }
+
   /* TECNOLOGIAS */
   .technology-section {
     padding: 80px 0;
@@ -438,7 +516,7 @@ body {
   }
 
   /* FORMAÇÃO */
-  /*   .formacao-section {
+  .formacao-section {
     padding: 80px 0;
   }
 
@@ -454,7 +532,7 @@ body {
   }
 
   .formacao-item {
-    width: 150px;
+    width: 250px;
     margin: 10px;
     padding: 10px;
   }
@@ -463,5 +541,5 @@ body {
     font-size: 18px;
     font-weight: var(--font-weight-bold);
     color: var(--dark-color);
-  } */
+  }
 }
