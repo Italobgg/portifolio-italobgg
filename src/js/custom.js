@@ -87,3 +87,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var sectionElements = document.querySelectorAll("#img-lateral1");
+
+  // Percorre todas as seções selecionadas
+  sectionElements.forEach(function (sectionElement) {
+    // Cria um novo waypoint para cada seção
+    var waypoint = new Waypoint({
+      element: sectionElement,
+      handler: function () {
+        // Quando a seção estiver visível, adiciona a classe de animação do animate.css
+        sectionElement.classList.add(
+          "animate__animated",
+          "animate__fadeInUp"
+        );
+      },
+      offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var sectionElements = document.querySelectorAll("#img-lateral2");
+
+  // Percorre todas as seções selecionadas
+  sectionElements.forEach(function (sectionElement) {
+    // Cria um novo waypoint para cada seção
+    var waypoint = new Waypoint({
+      element: sectionElement,
+      handler: function () {
+        // Quando a seção estiver visível, adiciona a classe de animação do animate.css
+        sectionElement.classList.add(
+          "animate__animated",
+          "animate__fadeInDown"
+        );
+      },
+      offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado
+    });
+  });
+});
