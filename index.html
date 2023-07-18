@@ -16,9 +16,8 @@
 
 <body>
 
-    <!-- ======= Header ======= -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img class="nav-img" src="./src/images/LogoNavbarnbg.png">
@@ -30,16 +29,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Página Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                            <a class="nav-link" href="#inicial">Página Inicial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projetos">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#formacao">Formações</a>
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
@@ -50,8 +46,7 @@
         </nav>
     </header>
 
-    <!-- ======= Apresentação ======= -->
-    <section class="portfolio-section">
+    <section id="inicial" class="portfolio-section">
         <div class="container">
 
             <div class="row d-flex align-items-center justify-content-center">
@@ -62,7 +57,7 @@
                             <i class="icon fa-brands fa-github"></i>
                             <i class="icon fa-brands fa-linkedin-in"></i>
                         </h1>
-                        <h2>Bartolomeu</h2>
+                        <h2 class="text-start">Bartolomeu</h2>
                         <p>Um desenvolvedor web apaixonado por criar soluções digitais. Sempre buscando aprimoramento de
                             habilidades e entra de projetos com qualidade.
                         </p>
@@ -79,7 +74,39 @@
         </div>
     </section>
 
-    <!-- ======= habilidades ======= -->
+    <section id="projetos" class="portfolio-section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img class="img-port" src="./src/images/ModeloPag.png" alt="Imagem do Portfólio 1">
+                        </div>
+                        <div class="portfolio-description">
+                            <h3>Título do Projeto 1</h3>
+                            <p>Breve descrição do projeto 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="https://festshow.vercel.app/" class="btn btn-primary" target="_blank">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                                <img class="img-port" src="./src/images/ModeloPag.png" alt="Imagem do Portfólio 2">
+                        </div>
+                        <div class="portfolio-description">
+                            <h3>Título do Projeto 2</h3>
+                            <p>Breve descrição do projeto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary" target="_blank">Visitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mais -->
+        </div>
+    </section>
+
     <section id="habilidades" class="technology-section">
         <div class="container">
             <h2>Tecnologias que domino</h2>
@@ -134,47 +161,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- ======= Projetos ======= -->
-    <section id="projetos" class="portfolio-section">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <a href="https://festshow.vercel.app/">
-                                <img class="img-port" src="./src/images/ModeloPag.png" alt="Imagem do Portfólio 1">
-                            </a>
-                        </div>
-                        <div class="portfolio-description">
-                            <h3>Título do Projeto 1</h3>
-                            <p>Breve descrição do projeto 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="https://festshow.vercel.app/" class="btn btn-primary">Visitar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <a href="caminho_da_imagem_ampliada_2">
-                                <img class="img-port" src="./src/images/ModeloPag.png" alt="Imagem do Portfólio 2">
-                            </a>
-                        </div>
-                        <div class="portfolio-description">
-                            <h3>Título do Projeto 2</h3>
-                            <p>Breve descrição do projeto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <a href="#" class="btn btn-primary">Visitar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Mais -->
-        </div>
-    </section>
-
-    <section id="formacao" class="formacao-section">
         <div class="container">
             <h2>Formação</h2>
             <div class="row row-formacao">
@@ -186,10 +172,45 @@
                 </div>
                 <div id="desco" class="img-section col-md-6 col-lg-3">
                     <div class="formacao-item">
-                        <img class="img-universidade" src="./src/images/universidade/unip.png"
+                        <img class="img-universidade" src="./src/images/universidade/posdescomplica.png"
                             alt="Logo Pós Descomplica">
                         <h4>Pós-graduação em Projetos de Aplicativos Móveis Multiplaforma</h4>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato-section">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <div class="contato-form">
+                <form>
+                    <input type="text" name="name" placeholder="Seu nome">
+                    <input type="text" name="email" placeholder="Seu e-mail">
+                    <textarea name="message" placeholder="Sua mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="contato-info">
+                <div class="info-item">
+                    <a href="https://api.whatsapp.com/send?phone=5516993866221&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site%20!"
+                        target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                    </a>
+                </div>
+                <div class="info-item">
+                    <a href="tel:+5516993866221">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Telefone</h4>
+                    </a>
+                </div>
+                <div class="info-item">
+                    <a href="mailto:italobggdev@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                    </a>
                 </div>
             </div>
         </div>
@@ -221,8 +242,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <!-- ======= Importando o JavaScript do Bootstrap ======= -->
     <script src="./src/js/bootstrap.min.js"></script>

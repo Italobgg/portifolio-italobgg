@@ -7,11 +7,7 @@
   --secondary-color: #d3b5f3;
   --section-bg-colo-primary: #3f3b3f;
   --section-bg-colo-secondary: #ffd6ba;
-  --custom-btn-bg-color: #0081a7;
-  --custom-btn-bg-hover-color: #4dfff3;
   --p-color: #dddddd;
-  --border-color: #7fffd4;
-  --link-hover-color: #89429e;
 
   --html5-color: #FA502E;
   --css3-color: #004AE1;
@@ -240,48 +236,8 @@ body {
   transition: 0.7s;
 }
 
-/* TECNOLOGIAS */
-.technology-section {
-  background: var(--section-bg-colo-secondary);
-  padding: 80px 0;
-}
-
-.technology-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.row-technology {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.icon-section {
-  width: 100%;
-  max-width: 160px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.technology-item {
-  background-color: var(--white-color);
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.technology-item i {
-  font-size: 50px;
-  margin-bottom: 20px;
-  transition: font-size 1s;
-}
-
-.technology-item h4 {
-  font-weight: var(--font-weight-bold);
-  color: var(--dark-color);
-}
-
 /* PORTFOLIO */
+/* .portfolio-section {} */
 
 .portfolio-item {
   display: flex;
@@ -338,14 +294,51 @@ body {
   background-color: var(--secondary-color);
 }
 
-/* FORMAÇÃO */
+/* Seção de Tecnologias */
+.technology-section {
+  background: var(--section-bg-colo-secondary);
+  padding: 80px 0;
+}
 
+.technology-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.row-technology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-section {
+  width: 100%;
+  max-width: 160px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.technology-item {
+  background-color: var(--white-color);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.technology-item i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  transition: font-size 1s;
+}
+
+.technology-item h4 {
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-color);
+}
+
+/* Seção de Formação */
 .formacao-section {
   background-color: var(--section-bg-colo-secondary);
   padding: 120px 0;
-  background-image: url('../images/bg.svg');
-  background-position: bottom;
-  background-size: cover;
 }
 
 .formacao-section h2 {
@@ -385,11 +378,91 @@ body {
   color: var(--dark-color);
 }
 
+/* CONTATO */
+.contato-section {
+  padding: 80px 0;
+  background-color: var(--section-bg-colo-primary);
+}
+
+.contato-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.contato-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contato-form input[type="text"],
+.contato-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  border-radius: var(--border-radius-small);
+}
+
+.contato-form textarea {
+  height: 120px;
+}
+
+.contato-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  font-size: var(--btn-font-size);
+  border: none;
+  border-radius: var(--border-radius-small);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contato-form input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+.contato-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contato-info .info-item {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.contato-info .info-item i {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.contato-info .info-item h4 {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.contato-info .info-item p {
+  font-size: 16px;
+  color: var(--p-color);
+  line-height: 1.5;
+}
+
 /* FOOTER */
 
 .footer-section {
   padding: 60px 0;
-  background-color: var(--section-bg-colo-primary);
+  background-color: var(--dark-color);
   color: #f9e1d1;
 }
 
@@ -446,7 +519,7 @@ body {
   }
 
   .portfolio-text h1 {
-    font-size: 6.5em;
+    font-size: 5em;
   }
 
   .portfolio-text h2 {
@@ -454,7 +527,7 @@ body {
   }
 
   .portfolio-text p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .icon {
