@@ -11,6 +11,7 @@ var typed = new Typed(".typed-text", {
   loop: true,
 });
 
+/* tecnologias */
 document.addEventListener("DOMContentLoaded", function () {
   var sectionElements = document.querySelectorAll("#tecnologias");
 
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* formacoes */
 document.addEventListener("DOMContentLoaded", function () {
   var sectionElements = document.querySelectorAll("#formacoes");
 
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* unip */
 document.addEventListener("DOMContentLoaded", function () {
   var sectionElements = document.querySelectorAll("#unip");
 
@@ -68,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+/* desco */
 document.addEventListener("DOMContentLoaded", function () {
   var sectionElements = document.querySelectorAll("#desco");
 
@@ -81,46 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
         sectionElement.classList.add(
           "animate__animated",
           "animate__fadeInRight"
-        );
-      },
-      offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var sectionElements = document.querySelectorAll("#img-lateral1");
-
-  // Percorre todas as seções selecionadas
-  sectionElements.forEach(function (sectionElement) {
-    // Cria um novo waypoint para cada seção
-    var waypoint = new Waypoint({
-      element: sectionElement,
-      handler: function () {
-        // Quando a seção estiver visível, adiciona a classe de animação do animate.css
-        sectionElement.classList.add(
-          "animate__animated",
-          "animate__fadeInUp"
-        );
-      },
-      offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var sectionElements = document.querySelectorAll("#img-lateral2");
-
-  // Percorre todas as seções selecionadas
-  sectionElements.forEach(function (sectionElement) {
-    // Cria um novo waypoint para cada seção
-    var waypoint = new Waypoint({
-      element: sectionElement,
-      handler: function () {
-        // Quando a seção estiver visível, adiciona a classe de animação do animate.css
-        sectionElement.classList.add(
-          "animate__animated",
-          "animate__fadeInDown"
         );
       },
       offset: "100%", // Define a porcentagem da altura da seção em que o waypoint será acionado

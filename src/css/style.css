@@ -283,30 +283,35 @@ body {
 
 /* PORTFOLIO */
 
-.portfolio-section {
-  padding: 120px 0;
-}
-
 .portfolio-item {
   display: flex;
-  align-items: center;
-  margin-bottom: 40px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--white-color);
 }
 
 .portfolio-image {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
 }
 
 .portfolio-image img {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio-description {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 0 30px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 20px 30px;
+  text-align: center;
 }
 
 .portfolio-description h3 {
@@ -333,21 +338,20 @@ body {
   background-color: var(--secondary-color);
 }
 
-
 /* FORMAÇÃO */
 
 .formacao-section {
-  background-color: var(--section-bg-colo-primary);
-  padding: 80px 0;
+  background-color: var(--section-bg-colo-secondary);
+  padding: 120px 0;
   background-image: url('../images/bg.svg');
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 
 .formacao-section h2 {
   text-align: center;
   margin-bottom: 40px;
-  color: var(--white-color);
+  color: var(--dark-color);
 }
 
 .row-formacao {
@@ -385,7 +389,7 @@ body {
 
 .footer-section {
   padding: 60px 0;
-  background-color: var(--dark-color);
+  background-color: var(--section-bg-colo-primary);
   color: #f9e1d1;
 }
 
