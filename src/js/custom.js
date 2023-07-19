@@ -1,4 +1,5 @@
 // Animação da digitação
+
 var typed = new Typed(".typed-text", {
   strings: [
     "Desenvolvedor <i>Web</i>",
