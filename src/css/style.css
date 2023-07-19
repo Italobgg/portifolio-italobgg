@@ -457,8 +457,6 @@ body {
   background-color: var(--secondary-color);
 }
 
-
-
 .contato-info {
   display: flex;
   justify-content: center;
@@ -474,6 +472,11 @@ body {
   font-size: 40px;
   color: var(--primary-color);
   margin-bottom: 10px;
+}
+
+.contato-info .info-item i:hover {
+  color: var(--secondary-color);
+  transition: 0.3s;
 }
 
 .contato-info .info-item h4 {
