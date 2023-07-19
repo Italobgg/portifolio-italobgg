@@ -1,28 +1,32 @@
 <?php
+// Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Verifica se os campos do formulário foram preenchidos
-    if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["message"])) {
-        // Obter os valores dos campos do formulário
-        $name = $_POST["name"];
-        $email = $_POST["email"];
-        $message = $_POST["message"];
+    // Obtém os dados do formulário
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
 
+    // Verifica se os campos obrigatórios foram preenchidos
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "Por favor, preencha todos os campos obrigatórios.";
+    } else {
+        // Configurações para enviar o e-mail
+        $to = "italobggdev@gmail.com"; // Substitua pelo seu endereço de e-mail
+        $subject = "Novo contato I-GG";
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
 
-        // Exemplo: Enviar um e-mail
-        $to = "italobggdev@gmail.com";
-        $subject = "Formulário de Contato";
-        $headers = "From: $email";
-        $body = "Nome: $name\nE-mail: $email\nMensagem: $message";
+        // Corpo do e-mail
+        $email_body = "Nome: $name\n";
+        $email_body .= "E-mail: $email\n";
+        $email_body .= "Mensagem:\n$message";
 
-        mail($to, $subject, $body, $headers);
-
-        // Redirecionar para uma página de sucesso
-/*         header("Location: sucesso.html");
-        exit();
-    } else { */
-        // Se algum campo estiver em branco, redirecionar para uma página de erro
-/*         header("Location: erro.html");
-        exit(); */
+        // Tenta enviar o e-mail
+        if (mail($to, $subject, $email_body, $headers)) {
+            echo "Obrigado por entrar em contato. Sua mensagem foi enviada com sucesso!";
+        } else {
+            echo "Desculpe, houve um problema ao enviar o e-mail. Por favor, tente novamente mais tarde.";
+        }
     }
 }
 ?>
